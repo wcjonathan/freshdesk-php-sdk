@@ -14,6 +14,7 @@ use Freshdesk\Resources\Traits\DeleteTrait;
 use Freshdesk\Resources\Traits\FilterTrait;
 use Freshdesk\Resources\Traits\UpdateTrait;
 use Freshdesk\Resources\Traits\ViewTrait;
+use Freshdesk\Resources\Traits\RestoreTrait;
 
 /**
  *
@@ -25,7 +26,7 @@ use Freshdesk\Resources\Traits\ViewTrait;
  */
 class Contact extends AbstractResource
 {
-    use AllTrait, CreateTrait, ViewTrait, UpdateTrait, DeleteTrait, FilterTrait;
+    use AllTrait, CreateTrait, ViewTrait, UpdateTrait, DeleteTrait, FilterTrait, RestoreTrait;
 
     /**
      * The resource endpoint
